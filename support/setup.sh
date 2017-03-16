@@ -1,8 +1,9 @@
 echo "Create fisdemo project to work in, and load the A-MQ 6.2 template"
 echo 
-oc login -u developer
+oc login -u cheparinv
 oc new-project fisdemo
 oc create -f https://raw.githubusercontent.com/jboss-openshift/application-templates/master/amq/amq62-basic.json
+oc create -f https://raw.githubusercontent.com/jboss-fuse/application-templates/master/fis-image-streams.json
 
 echo "Setup the surrounding softwate and environment"
 echo
